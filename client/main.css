@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.poll {
+  width: 70rem;
+  padding: 5rem;
+  margin: 5rem auto;
+  font-family: inherit;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+}
+
+.poll__title {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.poll__option:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.poll__option:hover {
+  cursor: pointer;
+}
+
+.poll__option--selected .poll__option-fill {
+  background-color: #009578;
+}
+
+.poll__option--selected .poll__option-info {
+  font-weight: bold;
+}
+
+.poll__option-fill {
+  width: 80%;
+  height: 1rem;
+  background-color: #ddd;
+}
+
+.poll__option-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+}

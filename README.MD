@@ -1,0 +1,3 @@
+# Voting System Application
+
+Built with express, HTML, CSS and JavaScript...
